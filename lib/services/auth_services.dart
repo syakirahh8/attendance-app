@@ -16,10 +16,10 @@ class AuthServices {
   // get current user
   User? get currentUser => _auth.currentUser;
 
-  //auth state changes stream
+  //auth state changes stream = ketika kill aplikasi dia ga perlu login lagi
   Stream<User?> get authStateChanges => _auth.authStateChanges();
 
-  // sign in with email and password
+  // sign in with email and password = menggunakan proses asyncronous
   Future<UserCredential> signInWithEmailAndPassword(String email, String password) async {
     try {
       return await _auth.signInWithEmailAndPassword(
