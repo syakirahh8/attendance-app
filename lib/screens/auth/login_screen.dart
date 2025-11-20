@@ -55,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
       logoIcon: Icons.calendar_month_rounded,
       title: 'Welcome Back',
       subtitle: 'Login to Continue',
-      child: Column(
+      child: Column(  
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Card(
